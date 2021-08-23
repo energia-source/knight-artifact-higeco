@@ -1,0 +1,36 @@
+{
+  "name": "knight/artifact-higeco",
+  "type": "library",
+  "description": "Knight PHP artifact smtp",
+  "keywords": [
+    "ubyte",
+    "knight",
+    "artifact",
+    "higeco"
+  ],
+  "homepage": "https://github.com/energia-source/knight-artifact-higeco",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paolo Fabris",
+      "email": "support@ubyte.it",
+      "homepage": "https://www.ubyte.it/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Higeco\\": "lib/"
+    }
+  },
+  "require": {
+    "php": ">=7.3",
+    "energia-source/knight-armor": ">=2.0.1"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/energia-source/knight-armor"
+    }
+  ]
+}
