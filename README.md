@@ -95,7 +95,7 @@ Returns the current instance of the Curl class
 
  * **Returns:** `Nothing.` — 
 
-> ## ***Class IAM\Configuration usable methods***
+> ## ***Class Higeco\Configuration usable methods***
 
 ##### `public static function getUsername() : string`
 
