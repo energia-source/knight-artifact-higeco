@@ -4,6 +4,9 @@ namespace Higeco;
 
 use Knight\Configuration as KnightConfiguration;
 
+/* The Configuration class is a singleton that reads the configuration file and returns the username,
+password, and hostname */
+
 class Configuration
 {
     use KnightConfiguration;
@@ -15,15 +18,33 @@ class Configuration
 
     final protected function __construct() {}
 
+    /**
+     * Get the username from the configuration file
+     * 
+     * @return The username.
+     */
+
     public static function getUsername() : string
     {
         return static::getConfiguration(static::CONFIGURATION_USERNAME, true, static::CONFIGURATION_FILENAME);
     }
 
+    /**
+     * Get the password from the configuration file
+     * 
+     * @return The password.
+     */
+
     public static function getPassword() : string
     {
         return static::getConfiguration(static::CONFIGURATION_PASSWORD, true, static::CONFIGURATION_FILENAME);
     }
+
+    /**
+     * Get the host from the configuration file
+     * 
+     * @return The hostname of the server.
+     */
 
     public static function getHost() : string
     {

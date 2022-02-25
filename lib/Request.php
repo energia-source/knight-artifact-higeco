@@ -20,6 +20,8 @@ class Request
 
     final protected function __construct() {}
 
+    /* A constructor. */
+
     final public static function instance() : self
     {
         static $instance;
@@ -38,6 +40,16 @@ class Request
         return $instance;
     }
 
+    /**
+     * This function is used to call the API
+     * 
+     * @param string get The API endpoint to call.
+     * @param array querystring The querystring is the part of the URL that comes after the ?. In our
+     * example, it's `?key=value`.
+     * 
+     * @return An array of the response from the API.
+     */
+
     public static function callAPI(string $get, array $querystring = []) : array
     {
         static::instance();
@@ -52,10 +64,22 @@ class Request
         return (array)$curl_response;
     }
 
+    /**
+     * Returns the current instance of the Curl class
+     * 
+     * @return Nothing.
+     */
+
     public static function getCURL() :? Curl
     {
         return static::$curl;
     }
+
+    /**
+     * It sets the static property of the class to the value of the argument.
+     * 
+     * @param Curl curl The Curl object that will be used to make the request.
+     */
 
     protected static function setCURL(Curl $curl) : void
     {
