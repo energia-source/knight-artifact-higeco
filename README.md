@@ -95,12 +95,6 @@ Returns the current instance of the Curl class
 
  * **Returns:** `Nothing.` — 
 
-##### `protected static function setCURL(Curl $curl) : void`
-
-It sets the static property of the class to the value of the argument.
-
- * **Parameters:** `Curl` — The Curl object that will be used to make the request.
-
 > ## ***Class IAM\Configuration usable methods***
 
 ##### `public static function getUsername() : string`
