@@ -54,7 +54,7 @@ final class Higeco
 ## Structure
 
 library:
-    - [Higeco](https://github.com/energia-source/knight-artifact-higeco/tree/main/lib)
+- [Higeco](https://github.com/energia-source/knight-artifact-higeco/tree/main/lib)
 
 ## Usage
 
